@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path-to-bootstrap-css">
+
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-between;;
+        }
+
+        .about-item {
+            width:308px;
+            position: relative;
+            height: 400px;
+            background: #f0f0f0;
+            margin:10px 5px;
+            padding: 20px 15px;
+            display:flex;
+            flex-direction: column;
+            box-shadow: 0.5px 10px #e6e6e6;
+            transition:0.3s ease-in-out;
+            margin-top: 5%;
+            
+
+        }
+
+        .about-item h2 {
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 24px; 
+            
+            margin: 0px 0;
+            color: #333;
+        }
+
+        
+        footer.text {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1px 0; 
+            font-size: 8px; 
+        }
+        .about-item p {
+            margin-top: 0px;
+        }
+
+        .container p {
+            font-size: 20px; 
+            margin: 0px 0; 
+            color: #666;
+        }
+
+        .samsara{
+    background-image:url('{% static "images/samsara.jpg" %}');
+
+}
+    </style>
+</head>
+<body id="bg" style="background-image: url('{% static "images/safetybg.jpg" %}');
+    background-repeat: no-repeat;
+    background-size: cover;">
+    <ul>
+        <li><a href ='/home/'>HOME </a></li>
+    </ul>
+    
+
+    <section id='about'>
+        <div class='about-1'>
+            <h1> ABOUT US </h1>
+            <h4> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores quis illo est, quisquam nihil consequuntur voluptatibus velit id, vero veritatis sequi veniam unde quam, eius provident. Porro quibusdam ea cumque?</h4>
+        </div>
+        <div id='about-2'>
+            <div class='container'>
+                <div class='about-item'>
+                    <div class ='card-image samsara'></div>
+                    <i class='fa fa-book'></i>
+                    <h2>OUR MISSION</h2> 
+                    
+                    <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+                <div class='about-item'>
+                    <i class='fa fa-book'></i>
+                    <h2>OUR MISSION</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+                <div class='about-item'>
+                    <i class='fa fa-book'></i>
+                    <h2>OUR MISSION</h2>
+                    <br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class='text'>
+        <p>&copy; 2023 All rights reserved by Roadsafe Inc.  </p>
+    </footer>
+</body>
+</html>

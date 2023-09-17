@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>About Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+       
+        *{
+            box-sizing: border-box;
+            padding:0;
+            margin:0;
+            font-family: 'Roboto', sans-serif';
+        }
+
+        body{
+            background-color: grey;
+        }
+
+        .heading{
+            width:90%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align: center;
+            margin:20px;
+            padding: 50px 0;
+        }
+
+        .heading h1{
+            font-size: 50px;
+            color:whitesmoke;
+            position:relative;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .heading h1::after{
+            content:'';
+            position:absolute;
+            left:50%;
+            bottom:0;
+            transform:translateX(-50%);
+            height:3px;
+            display:block;
+            width: 100%;
+            margin:0 auto;
+            background-color:white;
+        }
+
+        .heading p{
+            font-size: 30px;
+            color:rgba(0, 0, 0, 0.789);
+            margin-bottom: 35px;
+        }
+
+        .container{
+        width:90%;
+        margin:0 auto;
+        padding:10px 20px;
+        }
+
+        .about{
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap:wrap;
+            padding:10px 20px;
+        }
+
+        .about-image{
+            flex:1;
+            margin-right:40px;
+            margin-left:-120px;
+            margin-top:10px;
+            margin-bottom:100px;
+            overflow:hidden;
+            max-width:300%;
+            height: 400%;
+            
+            
+        }
+
+        .about-image img{
+            width:100%;
+            height: 600px;
+            height:auto;
+            display:block;
+            transition:0.5 ease;
+            border-radius:15px 15px 0 0;
+        
+        }
+
+        .about-image:hover{
+            transform:scale(1.2);
+        }
+
+        .about-content{
+            flex:1;
+            margin-left:40px;
+        }
+
+        .about-content h2{
+            font-size: 30px;
+            color:rgb(245, 245, 245);
+            margin-bottom: 20px;
+        }
+
+        .about-content p{
+            font-size: 30px;
+            line-height:1.5;
+            color:rgba(0, 0, 0, 0.882);
+            margin-bottom: 20px;
+        }
+
+        .about-content .read-more{
+            display:inline-block;
+            background-color:white;
+            color: #000;
+            padding:10px 20px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 25px;
+            transition:0.5s ease;
+            margin-top:15px
+        }
+
+        .about-content .read-more:hover{
+            background-color: orange;
+            color: black;
+        }
+
+        footer{
+            padding:0.1px 0;
+            background-color:black;
+            margin-top: 350px;
+        }
+
+        footer p{
+            color:white;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        li a{
+            text-decoration:none;
+            color:white;
+            font-family:Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+            background-color:black; 
+            color:white;
+            padding:15px 20px;
+            display:block;
+            margin:20px 50px;
+            text-decoration:none;
+
+        }
+
+li a:hover{
+    color:orangered;
+    text-decoration:underline;
+
+    </style>
+ 
+    </style>
+</head>
+/* <body id="bg" style="background-image: url('{% static "images/safetybg.jpg" %}');
+    background-repeat: no-repeat;
+    background-size: cover;"> */
+    <body>
+    <ul>
+        <li><a href ='/home/'><h2>HOME </h2></a></li>
+    </ul>
+    <div class="heading">
+        <h1>What We Offer</h1>
+        <p>At RoadSafe Monitor, we're here to provide you with a comprehensive guide and reference for all your trucking needs. Whether you're an experienced owner-operator or just starting your journey in the trucking business, our platform offers a wealth of information and resources to support your success..</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            </div>
+            <div class="about-content">
+                <h2>What We Offer</h2>
+                <P> 
+            
+            <br>At RoadSafe Monitor, we're here to provide you with a comprehensive guide and reference for all your trucking needs. Whether you're an experienced owner-operator or just starting your journey in the trucking business, our platform offers a wealth of information and resources to support your success. </br>
+            <br>Our key services include:: </br>
+            <ul>
+                <li>Recommended ELD Devices: Discover the best Electronic Logging Device (ELD) solutions to streamline compliance and monitoring, helping you stay on top of FMCSA regulations.</li>
+                <li>Starting a Trucking Company: Get expert insights into what it takes to start and manage a successful trucking company, from obtaining necessary permits to setting up operations.</li>
+
+                <li>Logistics Services: Access logistics services to ensure that your logbooks are clean and accurate. We provide assistance in correcting any issues promptly.</li>
+            
+        </ul>
+        </od>
+        </P>
+
+        <div class="heading">
+        <h1>Our Team</h1>
+        <p>RoadSafe Monitor is built and maintained by a dedicated team led by Gladys Aloo. With years of experience in both the trucking industry and web development, our team is committed to delivering a user-friendly and valuable platform for trucking professionals.</p>
+    </div>
+
+            </div>
+        </section>
+    </div>
+    <footer class='text'>
+        <p>&copy; 2023 All rights reserved by Roadsafe Inc.  </p>
+    </footer>
+</body>
+</html>

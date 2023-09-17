@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoadSafeMonitor - Logistics Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color:orange;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: orange;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.content ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.content ul li {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer{
+    padding:0.1px 0;
+    background-color:black;
+    margin-top: 350px;
+}
+
+footer p{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul li a{
+   text-decoration:none;
+   color:white;
+   font-family:Arial;
+   font-weight: bold;
+   transition: 0.4s ease-in-out;
+   padding:15px 20px;
+   display:block;
+   margin:20px 50px;
+   text-decoration:none;
+
+}
+
+ul li a:hover{
+    color:orangered;
+    text-decoration:underline;
+</style>
+<body id="bg" style="background-image: url('{% static "images/safetybg.jpg" %}');
+    background-repeat: no-repeat;
+    background-size: cover;">
+    <ul>
+        <li><a href ='/home/'><h2>HOME </h2></a></li>
+    </ul>
+    <header>
+        <h1>RoadSafeMonitor Company</h1>
+        <p>Comprehensive ELD Service and Safety Monitoring</p>
+    </header>
+    <section class="content">
+        <h2>Our Services</h2>
+        <p>RoadSafeMonitor Company offers a comprehensive ELD service and safety monitoring service 24/7 every day of the year. Our team of experienced professionals is committed to ensuring the safety and compliance of your fleet.</p>
+        
+        <ul>
+            <li>Real-time monitoring of driver status, logs, and location</li>
+            <li>Individualized attention, giving more time to the drivers</li>
+            <li>Fast, high-quality service</li>
+            <li>Consulting services for new companies</li>
+            <li>24/7 ELD support</li>
+        </ul>
+        
+        <p>We take care of all violations, vehicle inspection records, and prepare monthly audit reports. With 4 years of experience, you can trust us to keep your fleet safe and compliant.</p>
+        
+        <h2>Contact Us</h2>
+        <p>Contact us today to learn more about our services and how we can help your business thrive.</p>
+        <a href="mailto:info@roadsafemonitor.com">info@roadsafemonitor.com</a>
+    </section>
+    <footer class='text'>
+        <p>&copy; 2023 All rights reserved by Roadsafe Inc.  </p>
+    </footer>
+</body>
+</html>

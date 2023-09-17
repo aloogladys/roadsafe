@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting a Trucking Company - FMCSA Guide</title>
+</head>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color:orange;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: orange;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul li a{
+   text-decoration:none;
+   color:white;
+   font-family:Arial;
+   font-weight: bold;
+   transition: 0.4s ease-in-out;
+   padding:15px 20px;
+   display:block;
+   margin:20px 50px;
+   text-decoration:none;
+
+}
+
+ul li a:hover{
+    color:orangered;
+    text-decoration:underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:black;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+</style>
+<body id="bg" style="background-image: url('{% static "images/safetybg.jpg" %}');
+    background-repeat: no-repeat;
+    background-size: cover;">
+    <ul>
+        <li><a href ='/home/'><h2>HOME </h2></a></li>
+    </ul>
+    <header>
+        <h1>Starting a Trucking Company</h1>
+        <p>According to FMCSA Guidelines</p>
+    </header>
+    <section class="content">
+        <h2>1. Business Plan</h2>
+        <p>Begin by creating a detailed business plan. Outline your business goals, target market, services offered, and financial projections.</p>
+
+        <h2>2. Legal Structure</h2>
+        <p>Choose a legal structure for your company, such as a sole proprietorship, LLC, or corporation. Consult with legal and financial advisors.</p>
+
+        <h2>3. DOT Number</h2>
+        <p>Register for a Department of Transportation (DOT) number. This is required for commercial vehicles involved in interstate commerce.</p>
+
+        <h2>4. Operating Authority</h2>
+        <p>Determine if you need operating authority (MC number) based on the type of transportation service you provide. Apply for it if required.</p>
+
+        <h2>5. Insurance</h2>
+        <p>Purchase commercial truck insurance that meets FMCSA requirements. Ensure adequate coverage for liability, cargo, and equipment.</p>
+
+        <h2>6. Compliance</h2>
+        <p>Understand and comply with FMCSA regulations, including Hours of Service (HOS), safety requirements, and drug testing programs.</p>
+
+        <h2>7. Safety Programs</h2>
+        <p>Implement safety programs and procedures to ensure driver and public safety. Train your drivers on safety regulations.</p>
+
+        <h2>8. Vehicle Maintenance</h2>
+        <p>Maintain your commercial vehicles regularly to ensure they are safe and compliant with FMCSA standards.</p>
+
+        <h2>9. Recordkeeping</h2>
+        <p>Keep accurate records of driver hours, maintenance, inspections, and other compliance-related data.</p>
+
+        <h2>10. Resources</h2>
+        <p>Utilize FMCSA resources, guides, and publications to stay informed about industry regulations and updates.</p>
+    </section>
+    <footer>
+        <p>For more detailed information, visit the <a href="https://www.fmcsa.dot.gov/" target="_blank" rel="noopener noreferrer">FMCSA website</a>.</p>
+    </footer>
+</body>
+</html>

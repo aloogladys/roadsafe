@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>ELD</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'roadsafe_app/css/eld.css' %}">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        padding:0;
+        margin:0;
+    }
+
+    body{
+        background-color: grey;
+    }
+
+    .container{
+    display:flex;
+    justify-content: center;
+    justify-content: center;
+    flex-wrap:nowrap;
+    
+    
+}
+.card{
+    background:whitesmoke;
+    width: 670px;
+    margin:10px;
+    border-radius:15px;
+
+
+}
+
+.card-image{
+    height:200px;
+    margin:15px;
+    background-size:cover;
+    border-radius:15px 15px 0 0;
+
+}
+
+.samsara{
+    background-image:url('{% static "images/samsara.jpg" %}');
+
+}
+
+.bluelink{
+    background-image:url('{% static "images/bluelink.jpg" %}');
+
+}
+
+.mastereld{
+    background-image:url('{% static "images/master.jpg" %}');
+
+}
+
+.card p{
+    padding: 10px;
+    
+}
+
+.card h3{
+    font-size: 50px;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+}
+
+.card a{
+   background-color:black; 
+   color:white;
+   padding:15px 20px;
+   display:block;
+   text-align:center;
+   margin:20px 50px;
+   text-decoration:none;
+
+}
+
+.card:hover{
+    background-color: orange;
+    color:white;
+    cursor:pointer;
+    transform:scale(1.05);
+    transition:all 1s ease-in-out;
+
+}
+
+li a{
+   text-decoration:none;
+   color:white;
+   font-family:Arial;
+   font-weight: bold;
+   transition: 0.4s ease-in-out;
+   background-color:black; 
+   color:white;
+   padding:15px 20px;
+   display:block;
+   margin:20px 50px;
+   text-decoration:none;
+
+}
+
+li a:hover{
+    color:orangered;
+    text-decoration:underline;
+}
+
+</style>
+
+<body id="bg" style="background-image: url('{% static "images/safetybg.jpg" %}');
+    background-repeat: no-repeat;
+    background-size: cover;">
+    <ul>
+        <li><a href ='/home/'><h2>HOME </h2></a></li>
+    </ul>
+    <section class ='container'>
+        <div class ='card'>
+            <div class ='card-image samsara'></div>
+            <h3>SAMSARA</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse nulla ipsa rerum magnam et consequuntur ullam corrupti architecto iste assumenda iusto voluptatem nemo beatae similique necessitatibus, natus sapiente porro vel.</p>
+            
+        </div>
+
+        <div class ='card'>
+            <div class ='card-image bluelink'></div>
+            <h3>BLUELINK</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia minus vitae eius dignissimos sequi, officia veniam quidem molestias laudantium? Similique eius ipsam facilis sunt impedit totam aliquid quas soluta suscipit.</p>
+           
+        </div>
+
+        <div class ='card'>
+            <div class ='card-image mastereld'></div>
+            <h3>MASTERELD</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.cupiditate aliquid? Debitis, quasi earum illum deserunt magnam nostrum minima, molestiae, aliquam aspernatur doloribus dolore. Nobis voluptatem laborum provident.</p>
+            
+        </div>
+    
+
+    </section>
+    
+
+</body>
+</html>

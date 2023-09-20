@@ -6,7 +6,7 @@ from django.conf.urls.static import static
 from roadsafe_app.views import home,about,contact,service,eld,logistics,guide,test,test2,readmore
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
+    path('/', home),
     path('about/', about),
     path('contact/', contact),
     path('service/', service),

@@ -14,9 +14,6 @@
             font-family: 'Roboto', sans-serif';
         }
 
-        body{
-            background-color: grey;
-        }
 
         .heading{
             width:90%;
@@ -80,6 +77,7 @@
             overflow:hidden;
             max-width:300%;
             height: 400%;
+            opacity: 0.9;
             
             
         }
@@ -91,6 +89,7 @@
             display:block;
             transition:0.5 ease;
             border-radius:15px 15px 0 0;
+            opacity: 0.8;
         
         }
 
@@ -145,6 +144,10 @@
             text-align: center;
             margin-top: 20px;
         }
+        
+        html{
+            scroll-behavior: smooth;
+        }
 
         li a{
             text-decoration:none;
@@ -161,20 +164,22 @@
 
         }
 
-li a:hover{
-    color:orangered;
-    text-decoration:underline;
+        li a:hover{
+            color:orangered;
+            text-decoration:underline;
+        }
+
 
     </style>
  
     </style>
 </head>
-/* <body id="bg" style="background-image: url('{% static "images/safetybg.jpg" %}');
+<body id="bg" style="background-image: url('{% static "images/safetybg.jpg" %}');
     background-repeat: no-repeat;
-    background-size: cover;"> */
+    background-size: cover;"> 
     <body>
     <ul>
-        <li><a href ='/home/'><h2>HOME </h2></a></li>
+        <li><a href ='/'><h2>HOME </h2></a></li>
     </ul>
     <div class="heading">
         <h1>Welcome to RoadSafe Monitor</h1>
@@ -188,7 +193,7 @@ li a:hover{
             <div class="about-content">
                 <h2>Why RoadSafe Monitor?</h2>
                 <p>The trucking business is a vital part of the American economy, but it comes with its own set of challenges and regulations. The Federal Motor Carrier Safety Administration (FMCSA) oversees this dynamic industry, setting rules and standards to ensure safety and compliance. In this ever-evolving landscape, it's crucial for truck drivers and company owners to have access to reliable information, products, and services that help them operate smoothly and safely.</p>
-                <a href="#" class="read-more">READ MORE</a>
+                <a href="/readmore/" class="read-more">READ MORE</a>
             </div>
         </section>
     </div>
